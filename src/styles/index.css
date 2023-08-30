@@ -1,5 +1,5 @@
 div .traffic-pole {
-    height: 70%;
+    height: 1000px;
     width: 500px;
     border-radius: 5%;
 }
@@ -16,5 +16,5 @@ div .traffic-pole {
 }
 
 .selected {
-    border: 2px solid white;
+    box-shadow: 0 0 100px white;
 }
