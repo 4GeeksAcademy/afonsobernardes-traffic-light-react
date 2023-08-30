@@ -14,3 +14,7 @@ div .traffic-pole {
     margin: auto auto;
     border-radius: 50%;
 }
+
+.selected {
+    border: 2px solid white;
+}
