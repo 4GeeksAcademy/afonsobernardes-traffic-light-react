@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CycleButton from "./cycle_lights.jsx"
 import "../../styles/index.css"
 
 //create your first component
@@ -7,8 +8,8 @@ const TrafficLight = () => {
 	const [ highlight, setHighlight ] = useState("");
 
 	return (
-		<div className="container-fluid d-flex vh-100 align-items-center justify-content-center">
-			
+		<div className="container d-flex vh-100 align-items-center justify-content-center">
+		
 			<div className="traffic-pole container d-flex align-items-center bg-dark">
 				<div className="traffic-lights">
 					<div className={`light red bg-danger my-3 ${highlight === "red" ? "selected" : ""}`} onClick={() => setHighlight("red")}>
@@ -23,8 +24,9 @@ const TrafficLight = () => {
 						&nbsp;
 					</div>
 				</div>
-				
 			</div>
+
+			<CycleButton selectedLight={highlight} changeLight={setHighlight} />
 		</div>
 	);
 };

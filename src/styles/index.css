@@ -2,11 +2,13 @@ div .traffic-pole {
     height: 1000px;
     width: 500px;
     border-radius: 5%;
+    padding: auto;
 }
 
 .traffic-lights {
     margin: auto;
 }
+
 
 .light {
     height: 250px;
